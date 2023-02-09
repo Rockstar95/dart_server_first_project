@@ -1,0 +1,9 @@
+docker image rm -f IMAGE hello_world
+
+docker build -t hello_world .
+
+docker run --rm -it -p 8888:8080 hello_world:latest
+
+docker ps
+
+docker stop 7333c040e46e
